@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="catalog_20048842.css"?>
+<cardom xsi:noNamespaceSchemaLocation="catalog_20048842.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <navigationbar>
+        <name>CARDOM</name>
+        <nav_home>Home</nav_home>
+        <nav_reviews>Reviews</nav_reviews>
+        <nav_platform>Steam</nav_platform>
+        <nav_platform>Netflix</nav_platform>
+        <nav_platform>Forever21</nav_platform>
+    </navigationbar>
+    <homepagepic/>
+    <title>About us</title>
+    <store>
+        <storelogo/>
+        <store_info>
+            <number>Phone - 9818286590</number>
+            <website>Website - www.cardom.com</website>
+            <branches>
+                    <store_branches>Branches</store_branches>
+                    <branch_info>
+                        <branch branchID="b0001">
+                            <storelocation>Edinburgh</storelocation>
+                            <storenumber>015522290</storenumber>
+                        </branch>
+                        <branch branchID="b0002">
+                            <storelocation>Manchester</storelocation>
+                            <storenumber>015517277</storenumber>
+                        </branch>
+                        <branch branchID="b0003" branch_type="Headquarter">
+                            <storelocation>London</storelocation>
+                            <storenumber>01527677</storenumber>
+                        </branch>
+                    </branch_info>
+            </branches>
+            <store_descrip>
+                We are a gift card company called CARDOM which was created in 2018. We offer you gift card from platforms like Steam, Netflix and Forever21. You can buy these cards physically from our branches or through the help of our website.
+            </store_descrip>
+        </store_info>
+    </store>
+    <title1>Gift Cards</title1>
+    <platforms>
+        <title2>Steam</title2>
+        <platform platformID="platforms10">
+            <platforminfo>
+                <platformname>Steam</platformname>
+                <platformwebsite>www.steam.com</platformwebsite>
+                <platformlogo id="ps"/>
+                <platform_description>Steam is a video game digital distribution service and storefront by Valve.</platform_description> <!--optional-->
+            </platforminfo>
+            <cards>
+                <card cardID="scard10v" type="gaming">
+                    <cardlogo id="CS10"/>
+                    <carddetails>
+                        <cardname>10</cardname>
+                        <price currency="£">14</price>
+                        <validity unit="months">10</validity>
+                        <usercount>2</usercount>
+                        <availableno>20</availableno>
+                        <type>Virtual</type>
+                        <epay>UKpay, Britcash</epay> <!--optional-->
+                        <codedelivery>within 1 day</codedelivery> <!--optional-->
+                        <offers>5% discount on any one product if you buy two 10 dollar card</offers> <!--optional-->
+                    </carddetails>
+                </card>
+                <card cardID="scard10p" type="gaming">
+                    <cardlogo id="CS10"/>
+                    <carddetails>
+                        <cardname>10</cardname>
+                        <price currency="£">14</price>
+                        <validity unit="months">9</validity>
+                        <usercount>1</usercount>
+                        <availableno>15</availableno>
+                        <type>Physical</type>
+                        <deliveryfee deliverytime="1day">1</deliveryfee> <!--optional element and attribute(deliverytime)-->
+                        <discount rate="%">6</discount> <!--optional-->
+                    </carddetails>
+                </card>
+                <card cardID="scard20p" type="gaming">
+                    <cardlogo id="CS20"/>
+                    <carddetails>
+                        <cardname>20</cardname>
+                        <price currency="£">22</price>
+                        <validity unit="months">12</validity>
+                        <usercount>2</usercount>
+                        <availableno>18</availableno>
+                        <type>Physical</type>
+                        <deliveryfee deliverytime="1day">1</deliveryfee> <!--optional-->
+                    </carddetails>
+                </card>
+                <card cardID="scar50v" type="gaming">
+                    <cardlogo id="CS50"/>
+                    <carddetails>
+                        <cardname>50</cardname>
+                        <price currency="£">50.50</price>
+                        <validity unit="months">10</validity>
+                        <usercount>4</usercount>
+                        <availableno>15</availableno>
+                        <type>Virtual</type>
+                        <epay>UKpay, Britcash</epay> <!--optional-->
+                        <codedelivery>within 1 day</codedelivery> <!--optional-->
+                        <offers>Only 50 cents charge in £50</offers>
+                    </carddetails>
+                </card>
+            </cards>
+        </platform>
+            <title3>Netflix</title3>
+            <platform platformID="platformn10">
+                <platforminfo>
+                    <platformname>Netflix</platformname>
+                    <platformwebsite>www.netflix.com</platformwebsite>
+                    <platformlogo id="pn"/>
+                </platforminfo>
+                <cards>
+                    <card cardID="ncard20p" type="streaming">
+                        <cardlogo id="CN20"/>
+                        <carddetails>
+                            <cardname>20</cardname>
+                            <price currency="£">22</price>
+                            <validity unit="months">9</validity>
+                            <usercount>1</usercount>
+                            <availableno>19</availableno>
+                            <type>Physical</type>
+                            <deliveryfee deliverytime="1day">1</deliveryfee> <!--optional-->
+                            <description>Netflix £10 is always a good gift.</description>
+                        </carddetails>
+                    </card>
+                    <card cardID="ncard20v" type="streaming">
+                        <cardlogo id="CN20"/>
+                        <carddetails>
+                            <cardname>20</cardname>
+                            <price currency="£">21</price>
+                            <validity unit="months">10</validity>
+                            <usercount>2</usercount>
+                            <availableno>22</availableno>
+                            <type>Virtual</type>
+                            <epay>UKpay, Britcash</epay> <!--optional-->
+                            <codedelivery>within 1 day</codedelivery> <!--optional-->
+                            <offers>7% discount on any one product if you buy two 20 dollar card</offers> <!--optional-->
+                        </carddetails>
+                    </card>
+                    <card cardID="ncard40p" type="streaming">
+                        <cardlogo id="CN40"/>
+                        <carddetails>
+                            <cardname>40</cardname>
+                            <price currency="£">42</price>
+                            <validity unit="months">10</validity>
+                            <usercount>2</usercount>
+                            <availableno>22</availableno>
+                            <type>Virtual</type>
+                            <epay>UKpay, Britcash</epay> <!--optional-->
+                            <codedelivery>within 1 day</codedelivery> <!--optional-->
+                        </carddetails>
+                    </card>
+                </cards>
+            </platform>
+            <title4>Forever 21</title4>
+            <platform platformID="platformf10">
+                <platforminfo>
+                    <platformname>Forever 21</platformname>
+                    <platformwebsite>www.forever21.com</platformwebsite>
+                    <platformlogo id="pf"/>
+                </platforminfo>
+                <cards>
+                    <card cardID="fcard10v"  type="shopping">
+                        <cardlogo id="CF10"/>
+                        <carddetails>
+                            <cardname>10</cardname>
+                            <price currency="£">11</price>
+                            <validity unit="months">4</validity>
+                            <usercount>1</usercount>
+                            <availableno>21</availableno>
+                            <type>Virtual</type>
+                            <epay>UKpay, Britcash</epay> <!--optional-->
+                            <codedelivery>within 1 day</codedelivery> <!--optional-->
+                        </carddetails>
+                    </card>
+                    <card cardID="fcard10p"  type="shopping">
+                        <cardlogo id="CF10"/>
+                        <carddetails>
+                            <cardname>10</cardname>
+                            <price currency="£">11</price>
+                            <validity unit="months">5</validity>
+                            <usercount>1</usercount>
+                            <availableno>20</availableno>
+                            <type>Physical</type>
+                            <deliveryfee deliverytime="1day">1</deliveryfee> <!--optional-->
+                            <discount rate="%">1</discount> <!--optional-->
+                        </carddetails>
+                    </card>
+                    <card cardID="fcard30v"  type="shopping">
+                        <cardlogo id="CF30"/>
+                        <carddetails>
+                            <cardname>30</cardname>
+                            <price currency="£">32</price>
+                            <validity unit="months">10</validity>
+                            <usercount>2</usercount>
+                            <availableno>18</availableno>
+                            <type>Virtual</type>
+                            <epay>UKpay, Britcash</epay> <!--optional-->
+                            <codedelivery>within 1 day</codedelivery> <!--optional-->
+                            <discount rate="%">2</discount> <!--optional-->
+                        </carddetails>
+                    </card>
+                </cards>
+            </platform>
+    </platforms>
+    <title5>Reviews</title5>
+    <reviews>
+        <review>
+            <reviewer>Manchester Great Paper</reviewer>
+            <reviewtype>9/10</reviewtype>
+            <comments>
+                A great website which fulfills all the demands of the customer in time. The website design is  great and the customer services is also very quick.
+            </comments><!--optional-->
+        </review>
+        <review>
+            <reviewer>Liverpool Website Group</reviewer>
+            <reviewtype>4/5</reviewtype>
+            <comments>
+                An excellent website which has every option which a customer requires for ordering or buying a gift card.
+            </comments><!--optional-->
+        </review>
+        <review>
+            <reviewer>Ireland Website Group</reviewer>
+            <reviewtype>4/5</reviewtype>
+        </review>
+    </reviews>
+</cardom>

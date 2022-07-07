@@ -1,0 +1,451 @@
+@font-face {
+    font-family: "Blooming Elegant Sans";
+    src: url("Blooming Elegant Sans.otf");
+}
+@font-face {
+    font-family: "ChoplinExtraBold";
+    src: url("ChoplinExtraBold.otf");
+}
+@font-face {
+    font-family: "ChoplinBook";
+    src: url("ChoplinBook.otf");
+}
+@font-face {
+    font-family: "Beautiful Heart";
+    src: url("Beautiful Heart.ttf");
+}
+cardom{
+    background-color: white;
+}
+
+navigationbar{
+    display: flex;
+    font-family: "Blooming Elegant Sans",'Courier New', Courier, monospace;
+    justify-content: space-between;
+    font-weight: 500;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 60px;
+    width: 1200px;
+    height: 40px;
+}
+
+nav_home, nav_reviews, nav_platform{
+    position: relative;
+    font-size: 27px;
+    margin-top: 25px;
+        
+}
+
+name{
+    position: relative;
+    font-family: "ChoplinExtraBold";
+    margin-top: 30px;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-right: 60px;
+    margin-bottom: 0px;
+    justify-content: space-between;
+    font-weight: bolder;
+    color: black
+}
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+}
+      
+40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+}
+    
+80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    }
+}
+
+nav_home, nav_reviews, nav_platform {
+    display: inline-block;
+    position: relative;
+    color: black;
+}
+  
+nav_home:after, nav_reviews:after, nav_platform:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    top: 30px;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+nav_home:hover:after, nav_reviews:hover:after, nav_platform:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+name:hover{
+    animation: bounce 1.5s;
+}
+
+homepagepic {
+    display: flex;
+    background-image: url("logo2.png");
+    margin-top: 0px;
+    width: 1200px;
+    height: 519px;
+    margin: auto;
+    background-size: contain;
+}
+
+title, title1, title2, title3, title4, title5{
+    display: inline-block;
+    width: 1200px;
+    height: 30px;
+    font-size: 60px;
+    margin-top: 100px;
+    text-align: center;
+    font-family: "Beautiful Heart";
+    color: black;
+}
+store{
+    display: flex;
+    margin-top: 140px;
+    color: black;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 1200px;
+    height: 400px;
+    background-color: #f1f2ed;
+}
+
+storelogo{
+    display: flex;
+    background-image: url("cardomlogo.jpeg");
+    background-size: contain;
+    width: 330px;
+    height: 330px;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+
+store_info{
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    margin-left: 90px;
+    width: 600px;
+}
+
+number, website, branches{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-left: 0px;
+}
+
+number, website{
+    font-size: 30px;
+    font-family: "Blooming Elegant Sans";
+    margin-left: 0px;
+}
+branches{
+    display: flex;
+    flex-direction: column;
+}
+store_branches{
+    display: inline-block;
+    text-decoration: underline;
+    height: 30px;
+    font-size: 30px;
+    width: 100px;
+    font-family: "Blooming Elegant Sans";
+}
+
+branch_info{
+    display: flex;
+    margin-top: 10px;
+}
+branch{
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    font-family: "ChoplinExtraBold";
+    margin-top: 5px;
+    font-size: 15px;
+}
+store_descrip{
+    display: inline-block;
+    font-size: 25px;
+    font-family: "Blooming Elegant Sans";
+    margin-top: 15px;
+    text-align: justify;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+platforms{
+    display: flex;
+    width: 1200px;
+    height: 2400px;
+    flex-direction: column;
+    margin-top: 0px;
+}
+
+platform{
+    display: flex;
+    width: 1200px;
+    height: 500px;
+    margin-top: 150px;
+    margin-left: 30px;
+    font-family: "Blooming Elegant Sans";
+    background-color: #f1f2ed;
+}
+platforminfo{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    text-align: justify;
+    margin-top: 40px;
+    margin-left: 50px;
+    color: black;
+    padding: 5px;
+    border-right: 2px solid white;
+}
+platformname{
+    font-size: 40px;
+    margin-left: 20px;
+    font-family: "ChoplinExtraBold";
+}
+platformwebsite{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 24px;
+    margin-left: 20px;
+    text-decoration: underline;
+}
+
+platform_description{
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+#ps{
+    display: inline-block;
+    background-image: url("steamlog(1).png");
+    background-size: cover;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+cards{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 10px;
+    font-size: 25px;
+    background-size: contain;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+card{
+    display: flex;
+    width: 800px;
+    height: 400px;
+    margin-right: 20px;
+}
+
+card:hover {
+    background-image: url("ex.jpg");
+    background-size: cover;
+    color: rgb(241, 242, 237);
+}
+
+#CS10{
+    display: inline-block;
+    background-image: url("steam10.png");
+    width: 400px;
+    height: 250px;
+    margin-top: 50px;
+    margin-left: 10px;
+    background-size: contain;
+}
+
+#CS20{
+    display: inline-block;
+    background-image: url("steam20.png");
+    width: 400px;
+    height: 250px;
+    margin-top: 50px;
+    margin-left: 10px;
+    background-size: contain;
+}
+
+#CS50{
+    display: inline-block;
+    background-image: url("steam50.png");
+    width: 400px;
+    height: 250px;
+    margin-top: 50px;
+    margin-left: 10px;
+    background-size: contain;
+}
+#CN20{
+    display: inline-block;
+    background-image: url("netflix20.png");
+    width: 400px;
+    height: 250px;
+    margin-top: 50px;
+    margin-left: 10px;
+    background-size: contain;
+}
+#CN40{
+    display: inline-block;
+    background-image: url("netflix40.png");
+    width: 400px;
+    height: 250px;
+    margin-top: 50px;
+    margin-left: 10px;
+    background-size: contain;
+}
+#CF10{
+    display: inline-block;
+    background-image: url("forever2110.png");
+    width: 400px;
+    height: 250px;
+    margin-top: 50px;
+    margin-left: 10px;
+    background-size: contain;
+}
+#CF30{
+    display: inline-block;
+    background-image: url("forever2130.png");
+    width: 400px;
+    height: 250px;
+    margin-top: 50px;
+    margin-left: 10px;
+    background-size: contain;
+}
+
+carddetails{
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    height: 300px;
+    width: 350px;
+    text-align: justify;
+    margin-left: 40px;
+}
+cardname{
+    font-family: "ChoplinExtraBold";
+    font-size: 30px;
+}
+
+offers, description, epay{
+    white-space: normal;
+    margin-right: 100px;
+}
+
+#pn{
+    display: inline-block;
+    background-image: url("netflixlogo (2).png");
+    background-size: cover;
+    margin-left: 0px;
+    margin-top: 50px;
+    width: 300px;
+    height: 120px;
+}
+#pf{
+    display: inline-block;
+    background-image: url("forever21logo.png");
+    background-size: contain;
+    margin-top: 80px;
+    margin-left: 5px;
+    width: 290px;
+    height: 60px;
+}
+
+reviews{
+    display: flex;
+    background-color: #f1f2ed;
+    margin-top: 140px;
+    margin-left: 30px;
+    width: 1200px;
+    height: 200px;
+    margin-bottom: 200px;
+}
+
+review{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 75px;
+    font-size: 15px;
+    width: 300px;
+    height: 100px;
+    border-left: 2px solid black;
+    padding: 20px;
+}
+reviewer{
+    font-family: "ChoplinBook";
+    font-size: 17px;
+}
+price, validity, usercount, type, epay, codedelivery, deliveryfee, discount, description, offers, availableno
+{
+    display: list-item;
+}
+cardname::after{
+    content: " Card";
+}
+price::before{
+    content: "Price - £";
+}
+validity::before{
+    content: "Validity - ";
+}
+validity::after{
+    content: " months";
+}
+usercount::before{
+    content: "User Count - ";
+}
+availableno::before{
+    content: "Quantity Available - ";
+}
+type::before{
+    content: "Type - ";
+}
+epay::before{
+    content: "Epay options - ";
+}
+codedelivery::before{
+    content: "You will get code in - ";
+}
+deliveryfee::before{
+    content: "Delivery fee - £";
+}
+
+discount::before{
+    content: "Discount - ";
+}
+description::before{
+    content: "Description - ";
+}
+offers::before{
+    content: "Offer - ";
+}
+discount::after{
+    content: "%";
+}

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+    <xs:element name="cardom">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="navigationbar"/>
+                <xs:element ref="homepagepic"/>
+                <xs:element ref="title"/>
+                <xs:element ref="store"/>
+                <xs:element ref="title1"/>
+                <xs:element ref="platforms"/>
+                <xs:element ref="title5"/>
+                <xs:element ref="reviews"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="homepagepic"/>
+    <xs:element name="title" type="xs:string"/>
+    <xs:element name="title1" type="xs:string"/>
+    <xs:element name="title5" type="xs:string"/>
+
+    <xs:element name="navigationbar">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="name"/>
+                <xs:element ref="nav_home"/>
+                <xs:element ref="nav_reviews"/>
+                <xs:element ref="nav_platform" minOccurs="1" maxOccurs="3"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="name" type="xs:string"/>
+    <xs:element name="nav_home" type="xs:string"/>
+    <xs:element name="nav_reviews" type="xs:string"/>
+    <xs:element name="nav_platform" type="xs:string"/>
+
+    <xs:element name="store">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="storelogo" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element ref="store_info" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>        
+    </xs:element>
+
+    <xs:element name="storelogo"/>
+
+    <xs:element name="store_info">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="number"/>
+                <xs:element ref="website"/>
+                <xs:element ref="branches"/>
+                <xs:element ref="store_descrip"/>
+            </xs:sequence>
+        </xs:complexType> 
+    </xs:element>
+
+    <xs:element name="number" type="xs:string"/>
+    <xs:element name="website" type="xs:string"/>
+    <xs:element name="store_descrip" type="xs:string"/>
+
+    <xs:element name="branches">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="store_branches"/>
+                <xs:element ref="branch_info"/>
+            </xs:sequence>
+        </xs:complexType> 
+    </xs:element>
+
+    <xs:element name="store_branches" type="xs:string"/>
+
+    <xs:element name="branch_info">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="branch" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType> 
+    </xs:element>
+
+    <xs:element name="branch">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="storelocation"/>
+                <xs:element ref="storenumber"/>
+            </xs:sequence>
+            <xs:attribute ref="branchID" use="required"/>
+            <xs:attribute ref="branch_type" use="optional"/>
+        </xs:complexType> 
+    </xs:element>
+
+    <xs:element name="storelocation" type="xs:string"/>
+    <xs:element name="storenumber" type="xs:string"/>
+    <xs:attribute name="branchID" type="xs:ID"/>
+    <xs:attribute name="branch_type" type="xs:string" fixed="Headquarter"/>
+
+    <xs:element name="platforms">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="title2"/>
+                <xs:element ref="platform"/>
+                <xs:element ref="title3"/>
+                <xs:element ref="platform"/>
+                <xs:element ref="title4"/>
+                <xs:element ref="platform"/>
+            </xs:sequence>
+        </xs:complexType> 
+    </xs:element>
+    
+    <xs:element name="title2" type="xs:string"/>
+    <xs:element name="title3" type="xs:string"/>
+    <xs:element name="title4" type="xs:string"/>
+
+    <xs:element name="platform">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="platforminfo"/>
+                <xs:element ref="cards"/>
+            </xs:sequence>
+            <xs:attribute ref="platformID" use="required"/>
+        </xs:complexType> 
+    </xs:element>
+
+    <xs:attribute name="platformID" type="xs:ID"/>
+
+    <xs:element name="platforminfo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="platformname"/>
+                <xs:element ref="platformwebsite"/>
+                <xs:element ref="platformlogo"/>
+                <xs:element ref="platform_description" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType> 
+    </xs:element>
+
+    <xs:element name="platformname" type="xs:string"/>
+    <xs:element name="platformwebsite" type="xs:string"/>
+    <xs:element name="platformlogo"/>
+    <xs:element name="platform_description" type="xs:string"/>
+
+    <xs:element name="cards">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="card"  maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType> 
+    </xs:element>
+
+    <xs:element name="card">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="cardlogo"/>
+                <xs:element ref="carddetails"/>
+            </xs:sequence>
+            <xs:attribute ref="cardID" use="required"/>
+            <xs:attribute ref="type" use="required"/>
+        </xs:complexType> 
+    </xs:element>
+
+    <xs:element name="cardlogo"/>
+    <xs:attribute name="cardID" type="xs:ID"/>
+    <xs:attribute name="type">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="gaming"/>
+                <xs:enumeration value="streaming"/>
+                <xs:enumeration value="shopping"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <xs:element name="carddetails">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="cardname"/>
+                <xs:element ref="price"/>
+                <xs:element ref="validity"/>
+                <xs:element ref="usercount"/>
+                <xs:element ref="availableno"/>
+                <xs:element ref="type"/>
+                <xs:element ref="deliveryfee" minOccurs="0"/>
+                <xs:element ref="epay" minOccurs="0"/>
+                <xs:element ref="codedelivery" minOccurs="0"/>
+                <xs:element ref="discount" minOccurs="0"/>
+                <xs:element ref="offers" minOccurs="0"/>
+                <xs:element ref="description" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType> 
+    </xs:element>
+
+    <xs:element name="cardname" type="xs:string"/>
+    <xs:element name="usercount" type="xs:positiveInteger"/>
+    <xs:element name="availableno" type="xs:positiveInteger"/>
+    <xs:element name="type" type="xs:string"/>
+    <xs:element name="epay" type="xs:string"/>
+    <xs:element name="codedelivery" type="xs:string"/>
+    <xs:element name="offers" type="xs:string"/>
+    <xs:element name="description" type="xs:string"/>
+
+    <xs:element name="price">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:float">
+                    <xs:attribute ref="currency" use="required" fixed="£"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:attribute name="currency" type="xs:string"/>
+
+    <xs:element name="validity">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:positiveInteger">
+                    <xs:attribute ref="unit" use="required" fixed="months"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:attribute name="unit" type="xs:string"/>
+
+    <xs:element name="deliveryfee">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:positiveInteger">
+                    <xs:attribute ref="deliverytime" use="required" fixed="1day"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:attribute name="deliverytime" type="xs:string"/>
+
+    <xs:element name="discount">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:positiveInteger">
+                    <xs:attribute ref="rate" use="required" fixed="%"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:attribute name="rate" type="xs:string"/>
+
+    <xs:element name="reviews">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="review" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType> 
+    </xs:element>
+
+    <xs:element name="review">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="reviewer"/>
+                <xs:element ref="reviewtype"/>
+                <xs:element ref="comments" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType> 
+    </xs:element>
+
+    <xs:element name="reviewer" type="xs:string"/>
+    <xs:element name="reviewtype" type="xs:string"/>
+    <xs:element name="comments" type="xs:string"/>
+
+</xs:schema>
